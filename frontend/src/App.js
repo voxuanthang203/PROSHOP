@@ -13,14 +13,9 @@ function App() {
       <main className="py-3">
         <Container>
           <Routes>
-            {" "}
-            {/* Use Routes to wrap your routes */}
-            <Route path="/" element={<HomeScreen />} exact />{" "}
-            {/* Use element prop instead of component */}
-            <Route path="/home" element={<HomeScreen />} exact />{" "}
-            {/* Use element prop instead of component */}
+            <Route path="/" element={<HomeScreen />} exact />
+            <Route path="/home" element={<HomeScreen />} exact />
             <Route path="/product/:id" element={<ProductScreen />} />{" "}
-            {/* Use element prop instead of component */}
           </Routes>
         </Container>
       </main>
